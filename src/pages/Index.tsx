@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Users, FileText, Calendar } from "lucide-react";
@@ -169,7 +170,7 @@ const Index = () => {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-12 bg-rose-400 relative overflow-hidden">
+      <section className="py-14 bg-rose-400 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.1%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
@@ -180,7 +181,7 @@ const Index = () => {
               Neem contact op en ontdek hoe MAS Services u kan helpen met professionele ondersteuning.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" variant="secondary" className="bg-white text-rose-500 hover:bg-gray-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-pulse hover:animate-none">
+              <Button size="lg" variant="secondary" className="bg-white text-rose-500 hover:bg-gray-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-[pulse_3s_ease-in-out_infinite] hover:animate-none">
                 <Link to="/contact" className="flex items-center gap-2">
                   Neem contact op
                   <ArrowRight className="h-5 w-5" />
