@@ -71,10 +71,10 @@ const Contact = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            {/* Left Column - Contact Form and Why MAS Services */}
+            {/* Left Column - Contact Form */}
             <div className="space-y-6">
               {/* Contact Form */}
-              <Card className="shadow-xl border-0">
+              <Card className="shadow-xl border-0 h-fit">
                 <CardHeader className="bg-rose-400 text-white">
                   <CardTitle className="text-2xl flex items-center gap-3">
                     <Send className="h-6 w-6" />
@@ -167,7 +167,7 @@ const Contact = () => {
               </Card>
 
               {/* Why MAS Services */}
-              <Card className="shadow-lg border-0 bg-rose-50">
+              <Card className="shadow-lg border-0 bg-rose-50 h-fit">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-gray-900 mb-3">Waarom MAS Services?</h3>
                   <div className="space-y-2">
@@ -196,7 +196,7 @@ const Contact = () => {
             <div className="space-y-6">
               <Card className="shadow-lg border-0 overflow-hidden transform hover:scale-105 transition-transform duration-300">
                 <CardContent className="p-0">
-                  <div className="w-full h-80 overflow-hidden">
+                  <div className="w-full h-96 overflow-hidden">
                     <img 
                       src="/lovable-uploads/e706c6aa-ddc3-45b2-a8e3-0838040bbd0d.png" 
                       alt="Gidi Kroonen - MAS Services"
@@ -210,10 +210,10 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-lg border-0">
-                <CardContent className="p-6">
+              <Card className="shadow-lg border-0 flex-1">
+                <CardContent className="p-6 h-full flex flex-col">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Contactgegevens</h3>
-                  <div className="space-y-4">
+                  <div className="space-y-4 flex-1">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 bg-rose-400 rounded-full flex items-center justify-center">
                         <Mail className="h-5 w-5 text-white" />
