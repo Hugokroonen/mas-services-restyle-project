@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -69,9 +70,9 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8">
             {/* Contact Form */}
-            <Card className="shadow-xl border-0">
+            <Card className="shadow-xl border-0 h-fit">
               <CardHeader className="bg-rose-400 text-white">
                 <CardTitle className="text-2xl flex items-center gap-3">
                   <Send className="h-6 w-6" />
@@ -164,14 +165,14 @@ const Contact = () => {
             </Card>
 
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-6">
               <Card className="shadow-lg border-0 overflow-hidden transform hover:scale-105 transition-transform duration-300">
                 <CardContent className="p-0">
-                  <div className="w-full h-80 overflow-hidden">
+                  <div className="w-full h-64 overflow-hidden">
                     <img 
                       src="/lovable-uploads/e706c6aa-ddc3-45b2-a8e3-0838040bbd0d.png" 
                       alt="Gidi Kroonen - MAS Services"
-                      className="w-full h-full object-cover object-[center_20%]"
+                      className="w-full h-full object-cover object-[center_15%]"
                     />
                   </div>
                   <div className="p-6 bg-rose-50">
@@ -182,12 +183,12 @@ const Contact = () => {
               </Card>
 
               <Card className="shadow-lg border-0">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">Contactgegevens</h3>
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-rose-400 rounded-full flex items-center justify-center">
-                        <Mail className="h-6 w-6 text-white" />
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Contactgegevens</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-rose-400 rounded-full flex items-center justify-center">
+                        <Mail className="h-5 w-5 text-white" />
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">E-mail</p>
@@ -195,9 +196,9 @@ const Contact = () => {
                       </div>
                     </div>
                     
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-rose-400 rounded-full flex items-center justify-center">
-                        <Phone className="h-6 w-6 text-white" />
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-rose-400 rounded-full flex items-center justify-center">
+                        <Phone className="h-5 w-5 text-white" />
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">Telefoon</p>
@@ -205,9 +206,9 @@ const Contact = () => {
                       </div>
                     </div>
                     
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-rose-400 rounded-full flex items-center justify-center">
-                        <MapPin className="h-6 w-6 text-white" />
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-rose-400 rounded-full flex items-center justify-center">
+                        <MapPin className="h-5 w-5 text-white" />
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">Locatie</p>
@@ -219,24 +220,24 @@ const Contact = () => {
               </Card>
 
               <Card className="shadow-lg border-0 bg-rose-50">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Waarom MAS Services?</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <CheckCircle className="h-5 w-5 text-rose-400" />
-                      <span className="text-gray-700">Ervaren professional</span>
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">Waarom MAS Services?</h3>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-rose-400" />
+                      <span className="text-gray-700 text-sm">Ervaren professional</span>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <CheckCircle className="h-5 w-5 text-rose-400" />
-                      <span className="text-gray-700">Flexibele samenwerking</span>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-rose-400" />
+                      <span className="text-gray-700 text-sm">Flexibele samenwerking</span>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <CheckCircle className="h-5 w-5 text-rose-400" />
-                      <span className="text-gray-700">Persoonlijke aanpak</span>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-rose-400" />
+                      <span className="text-gray-700 text-sm">Persoonlijke aanpak</span>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <CheckCircle className="h-5 w-5 text-rose-400" />
-                      <span className="text-gray-700">Snelle responstijd</span>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-rose-400" />
+                      <span className="text-gray-700 text-sm">Snelle responstijd</span>
                     </div>
                   </div>
                 </CardContent>
