@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Linkedin } from "lucide-react";
 
@@ -23,14 +22,6 @@ const Footer = () => {
               <p>5283 NA Boxtel</p>
               <p>T: 06-36374035</p>
               <p>E: info@mas-services.nl</p>
-              <a 
-                href="https://www.linkedin.com/in/gidi-kroonen/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-rose-300 transition-colors mt-2"
-              >
-                <Linkedin className="h-4 w-4" />
-              </a>
             </div>
           </div>
           
@@ -66,7 +57,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 MAS Services. Alle rechten voorbehouden.</p>
+          <p>&copy; 2025 MAS Services. Alle rechten voorbehouden.</p>
         </div>
       </div>
     </footer>
