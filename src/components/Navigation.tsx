@@ -36,14 +36,6 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <a
-              href="https://www.linkedin.com/in/gidi-kroonen/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium"
-            >
-              LinkedIn
-            </a>
             <SearchCommand />
           </div>
 
@@ -75,15 +67,6 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <a
-                href="https://www.linkedin.com/in/gidi-kroonen/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block px-3 py-2 text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                LinkedIn
-              </a>
             </div>
           </div>
         )}
