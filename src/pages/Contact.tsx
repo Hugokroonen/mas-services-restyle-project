@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -44,7 +43,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-rose-50">
+    <div className="min-h-screen bg-slate-50">
       <Navigation />
       
       <div className="pt-24 pb-16">
@@ -202,10 +201,12 @@ const Contact = () => {
 
               <Card className="shadow-lg border-0 overflow-hidden transform hover:scale-105 transition-transform duration-300">
                 <CardContent className="p-0">
-                  <div className="w-full h-64 bg-rose-100 flex items-center justify-center">
-                    <div className="w-32 h-32 bg-rose-200 rounded-full flex items-center justify-center">
-                      <span className="text-rose-400 text-sm">Foto placeholder</span>
-                    </div>
+                  <div className="w-full h-80 overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/e706c6aa-ddc3-45b2-a8e3-0838040bbd0d.png" 
+                      alt="Gidi Kroonen - MAS Services"
+                      className="w-full h-full object-cover object-center"
+                    />
                   </div>
                   <div className="p-6 bg-rose-50">
                     <h4 className="font-bold text-gray-900 text-lg mb-2">MAS Services</h4>

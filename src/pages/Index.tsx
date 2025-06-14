@@ -53,7 +53,7 @@ const Index = () => {
         {/* Hero Image - Header Style */}
         <div className="relative h-[350px] w-full">
           <img 
-            src="/lovable-uploads/9ac688cd-d5ac-4222-9e9e-34632fb17888.png" 
+            src="/lovable-uploads/a29069a1-ae4b-4a1f-8c38-74ebd396084e.png" 
             alt="MAS Services header"
             className="w-full h-full object-cover"
           />
@@ -70,14 +70,14 @@ const Index = () => {
                   </h1>
                   
                   {/* Dynamic rotating service text */}
-                  <div className="text-xl lg:text-2xl font-medium text-white leading-relaxed">
-                    <div className="mb-2">
+                  <div className="space-y-2">
+                    <div className="text-xl lg:text-2xl font-medium text-white leading-relaxed">
                       <span>Professionele </span>
                       <span className="text-rose-200 transition-all duration-500">
                         {serviceWords[currentService]}
                       </span>
                     </div>
-                    <div className="text-lg lg:text-xl text-white">
+                    <div className="text-lg lg:text-xl text-white font-normal">
                       Focus op uw core business terwijl ik de rest regel.
                     </div>
                   </div>
@@ -104,14 +104,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Photo Section - Space for your personal photo */}
+      {/* Photo Section - Personal introduction */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-rose-50 rounded-3xl p-12 shadow-lg">
-            <div className="w-32 h-32 bg-rose-200 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
-              <div className="w-full h-full bg-rose-100 rounded-full flex items-center justify-center">
-                <span className="text-rose-400 text-sm">Foto placeholder</span>
-              </div>
+            <div className="w-40 h-40 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+              <img 
+                src="/lovable-uploads/2f02750c-4eaf-469e-b258-84c4a8850b73.png" 
+                alt="Gidi Kroonen - MAS Services"
+                className="w-full h-full object-cover"
+              />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Gidi Kroonen</h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
