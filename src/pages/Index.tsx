@@ -10,9 +10,9 @@ import Footer from "@/components/Footer";
 const Index = () => {
   const [currentService, setCurrentService] = useState(0);
   const serviceWords = [
-    { text: "Administratieve", color: "text-blue-500" },
-    { text: "Secretariële", color: "text-purple-500" },
-    { text: "Notuleer", color: "text-rose-500" }
+    { text: "Administratieve", color: "text-blue-400" },
+    { text: "Secretariële", color: "text-purple-400" },
+    { text: "Notuleer", color: "text-rose-400" }
   ];
 
   useEffect(() => {
@@ -55,7 +55,7 @@ const Index = () => {
             <div className="space-y-8">
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  MAS <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Services</span>
+                  MAS <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400">Services</span>
                 </h1>
                 
                 {/* Dynamic rotating title */}
@@ -77,7 +77,7 @@ const Index = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <Button size="lg" className="bg-gradient-to-r from-blue-300 to-purple-400 hover:from-blue-400 hover:to-purple-500 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                   <Link to="/contact" className="flex items-center gap-2">
                     Neem Contact Op
                     <ArrowRight className="h-5 w-5" />
@@ -101,8 +101,12 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/9ac688cd-d5ac-4222-9e9e-34632fb17888.png" 
                   alt="Professional workspace" 
-                  className="w-full h-[500px] object-cover object-center"
-                  style={{ objectPosition: '50% 50%', transform: 'scale(1.4)' }}
+                  className="w-full h-[600px] object-cover"
+                  style={{ 
+                    objectPosition: '50% 50%', 
+                    transform: 'scale(1.2)',
+                    clipPath: 'inset(20% 0)'
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
               </div>
@@ -126,7 +130,7 @@ const Index = () => {
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-3 hover:scale-105">
                 <CardHeader className="text-center pb-4">
-                  <div className="mx-auto w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:rotate-6">
+                  <div className="mx-auto w-16 h-16 bg-gradient-to-r from-blue-300 to-purple-400 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:rotate-6">
                     <service.icon className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-xl font-bold text-gray-900">{service.title}</CardTitle>
@@ -135,7 +139,7 @@ const Index = () => {
                   <CardDescription className="text-gray-600 leading-relaxed">
                     {service.description}
                   </CardDescription>
-                  <Button variant="ghost" className="text-blue-500 hover:text-blue-600 font-medium group">
+                  <Button variant="ghost" className="text-blue-400 hover:text-blue-500 font-medium group">
                     <Link to={service.link} className="flex items-center gap-2">
                       Meer Informatie
                       <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -149,8 +153,8 @@ const Index = () => {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-400 to-purple-500 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+      <section className="py-20 bg-gradient-to-r from-blue-300 to-purple-400 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.1\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"2\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-white">
