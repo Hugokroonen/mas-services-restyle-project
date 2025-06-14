@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -195,12 +194,6 @@ const Contact = () => {
                       <CheckCircle className="h-5 w-5 text-rose-400" />
                       <span className="text-gray-700">Jarenlange ervaring in de branche</span>
                     </div>
-                  </div>
-                  <div className="mt-8 p-4 bg-white rounded-lg border border-rose-200">
-                    <p className="text-sm text-gray-600 italic">
-                      "Kwaliteit en betrouwbaarheid staan bij MAS Services voorop. 
-                      Uw project verdient de beste ondersteuning."
-                    </p>
                   </div>
                 </CardContent>
               </Card>
