@@ -171,7 +171,7 @@ const Contact = () => {
                     <img 
                       src="/lovable-uploads/e706c6aa-ddc3-45b2-a8e3-0838040bbd0d.png" 
                       alt="Gidi Kroonen - MAS Services"
-                      className="w-full h-full object-cover object-top"
+                      className="w-full h-full object-cover object-[center_20%]"
                     />
                   </div>
                   <div className="p-6 bg-rose-50">

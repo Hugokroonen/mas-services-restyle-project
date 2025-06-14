@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Users, FileText, Calendar } from "lucide-react";
@@ -75,9 +74,9 @@ const Index = () => {
       </section>
 
       {/* Hero Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-12 items-center">
+          <div className="grid lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-2 space-y-8">
               <div className="space-y-6">
                 {/* Dynamic rotating service text */}
@@ -88,7 +87,7 @@ const Index = () => {
                       {serviceWords[currentService]}
                     </span>
                   </div>
-                  <div className="text-xl lg:text-2xl text-white font-normal leading-relaxed">
+                  <div className="text-xl lg:text-2xl text-gray-700 font-normal leading-relaxed">
                     Focus op uw core business terwijl de rest geregeld wordt.
                   </div>
                 </div>
@@ -107,7 +106,7 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="space-y-6">
+            <div>
               <QuickContact />
             </div>
           </div>
@@ -115,7 +114,7 @@ const Index = () => {
       </section>
 
       {/* Photo Section - Personal introduction */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-rose-50 rounded-3xl p-12 shadow-lg">
             <div className="w-40 h-40 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
@@ -135,7 +134,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-12 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl font-bold text-gray-900">Mijn diensten</h2>
@@ -172,7 +171,7 @@ const Index = () => {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-16 bg-rose-400 relative overflow-hidden">
+      <section className="py-12 bg-rose-400 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.1%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
