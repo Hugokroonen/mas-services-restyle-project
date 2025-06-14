@@ -22,7 +22,7 @@ const Privacy = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-rose-300">
                 Privacy
               </span>
             </h1>
@@ -47,14 +47,14 @@ const Privacy = () => {
             </Card>
 
             <Card className="shadow-xl border-0 overflow-hidden">
-              <CardHeader className="bg-gradient-to-r from-rose-500 to-purple-600 text-white">
-                <CardTitle className="text-2xl">Onze Privacyprincipes</CardTitle>
+              <CardHeader className="bg-rose-300 text-white">
+                <CardTitle className="text-2xl">Onze privacyprincipes</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
                 <div className="space-y-4">
                   {privacyPoints.map((point, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <div className="w-6 h-6 bg-gradient-to-r from-rose-400 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-6 h-6 bg-rose-300 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-white text-sm font-bold">{index + 1}</span>
                       </div>
                       <p className="text-gray-700 leading-relaxed">{point}</p>
@@ -64,9 +64,9 @@ const Privacy = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-lg border-0 bg-gradient-to-br from-rose-50 to-purple-50">
+            <Card className="shadow-lg border-0 bg-rose-50">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">AVG Compliance</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">AVG compliance</h3>
                 <p className="text-gray-700 leading-relaxed">
                   MAS Services houdt zich strikt aan de Algemene Verordening Gegevensbescherming (AVG). 
                   Al onze processen zijn ontworpen om uw privacy te waarborgen en uw gegevens veilig te houden. 
