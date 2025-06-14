@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -172,7 +171,7 @@ const Contact = () => {
                     <img 
                       src="/lovable-uploads/e706c6aa-ddc3-45b2-a8e3-0838040bbd0d.png" 
                       alt="Gidi Kroonen - MAS Services"
-                      className="w-full h-full object-cover object-center"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <div className="p-6 bg-rose-50">
@@ -224,19 +223,19 @@ const Contact = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Waarom MAS Services?</h3>
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                      <CheckCircle className="h-5 w-5 text-rose-400" />
                       <span className="text-gray-700">Ervaren professional</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                      <CheckCircle className="h-5 w-5 text-rose-400" />
                       <span className="text-gray-700">Flexibele samenwerking</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                      <CheckCircle className="h-5 w-5 text-rose-400" />
                       <span className="text-gray-700">Persoonlijke aanpak</span>
                     </div>
                     <div className="flex items-center gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                      <CheckCircle className="h-5 w-5 text-rose-400" />
                       <span className="text-gray-700">Snelle responstijd</span>
                     </div>
                   </div>

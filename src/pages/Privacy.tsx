@@ -6,11 +6,11 @@ import Footer from "@/components/Footer";
 const Privacy = () => {
   const privacyPoints = [
     "Duidelijk vermeldt voor welke doeleinden persoonsgegevens verwerkt worden (middels deze privacyverklaring);",
-    "U allereerst vraagt om uitdrukkelijke toestemming om uw persoonsgegevens te mogen verwerken in gevallen waarin dit vereist is;",
+    "Allereerst vraagt om uitdrukkelijke toestemming om persoonsgegevens te mogen verwerken in gevallen waarin dit vereist is;",
     "Het verzamelen van persoonsgegevens beperkt tot de persoonsgegevens die uitsluitend nodig zijn voor de doeleinden waarvoor ze worden verwerkt;",
-    "Uw gegevens niet doorgeeft aan derde partijen, tenzij dat nodig is om de door uw gevraagde dienst te kunnen leveren of wanneer MAS Services daar wettelijk toe verplicht is;",
-    "Wanneer uw gegevens gedeeld worden maken we afspraken met derde partijen om er o.a. voor te zorgen dat uw gegevens niet voor andere doeleinden worden gebruikt;",
-    "Passende beveiligingsmaatregelen neemt om uw persoonsgegevens te beschermen en dat ook eisen van partijen die in opdracht van MAS Services persoonsgegevens verwerken;"
+    "Gegevens niet doorgeeft aan derde partijen, tenzij dat nodig is om de gevraagde dienst te kunnen leveren of wanneer MAS Services daar wettelijk toe verplicht is;",
+    "Wanneer gegevens gedeeld worden afspraken maakt met derde partijen om er o.a. voor te zorgen dat gegevens niet voor andere doeleinden worden gebruikt;",
+    "Passende beveiligingsmaatregelen neemt om persoonsgegevens te beschermen en dat ook eisen van partijen die in opdracht van MAS Services persoonsgegevens verwerken;"
   ];
 
   return (
@@ -27,7 +27,7 @@ const Privacy = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Uw privacy is belangrijk voor ons. Lees hier hoe wij omgaan met uw persoonlijke gegevens.
+              Privacy is belangrijk. Lees hier hoe MAS Services omgaat met persoonlijke gegevens.
             </p>
           </div>
 
@@ -35,8 +35,8 @@ const Privacy = () => {
             <Card className="shadow-lg border-0">
               <CardContent className="p-8">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Bij gebruik van deze website en het opnemen van contact middels de contactbutton laat u 
-                  bepaalde (persoons)gegevens achter. Deze gegevens worden door MAS Services zorgvuldig 
+                  Bij gebruik van deze website en het opnemen van contact middels de contactbutton worden 
+                  bepaalde (persoons)gegevens achtergelaten. Deze gegevens worden door MAS Services zorgvuldig 
                   verwerkt en beveiligd. Uiteraard met inachtneming van de eisen uit de privacywetgeving (AVG).
                 </p>
                 
@@ -48,7 +48,7 @@ const Privacy = () => {
 
             <Card className="shadow-xl border-0 overflow-hidden">
               <CardHeader className="bg-rose-400 text-white">
-                <CardTitle className="text-2xl">Onze privacyprincipes</CardTitle>
+                <CardTitle className="text-2xl">Privacyprincipes</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
                 <div className="space-y-4">
@@ -69,8 +69,8 @@ const Privacy = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">AVG compliance</h3>
                 <p className="text-gray-700 leading-relaxed">
                   MAS Services houdt zich strikt aan de Algemene Verordening Gegevensbescherming (AVG). 
-                  Al onze processen zijn ontworpen om uw privacy te waarborgen en uw gegevens veilig te houden. 
-                  Voor vragen over onze privacypraktijken kunt u altijd contact met ons opnemen.
+                  Alle processen zijn ontworpen om privacy te waarborgen en gegevens veilig te houden. 
+                  Voor vragen over privacypraktijken kunt u altijd contact opnemen.
                 </p>
               </CardContent>
             </Card>

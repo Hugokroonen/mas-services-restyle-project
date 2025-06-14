@@ -48,7 +48,7 @@ const Secretarieel = () => {
                 <div className="space-y-4">
                   {services.map((service, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="h-6 w-6 text-green-500 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-6 w-6 text-rose-400 mt-0.5 flex-shrink-0" />
                       <span className="text-gray-700 leading-relaxed">{service}</span>
                     </div>
                   ))}
