@@ -1,8 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const QuickContact = () => {
   return (
@@ -33,9 +31,6 @@ const QuickContact = () => {
             <span className="text-gray-700">Boxtel</span>
           </div>
         </div>
-        <Button asChild className="w-full mt-4 bg-rose-400 hover:bg-rose-500">
-          <Link to="/contact">Neem contact op</Link>
-        </Button>
       </CardContent>
     </Card>
   );
