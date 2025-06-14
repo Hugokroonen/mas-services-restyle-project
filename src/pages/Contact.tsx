@@ -64,7 +64,7 @@ const Contact = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Heeft u vragen over mijn diensten of wilt u een vrijblijvende offerte? 
+              Heeft u vragen over de diensten of wilt u een vrijblijvende offerte? 
               Ik help u graag verder. Neem gerust contact op!
             </p>
           </div>
@@ -78,8 +78,8 @@ const Contact = () => {
                   Stuur een bericht
                 </CardTitle>
               </CardHeader>
-              <CardContent className="p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
+              <CardContent className="p-6">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Naam *</Label>
@@ -138,9 +138,9 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       required
-                      rows={5}
+                      rows={4}
                       className="border-gray-300 focus:border-rose-400"
-                      placeholder="Vertel me meer over uw project of vraag..."
+                      placeholder="Vertel meer over uw project of vraag..."
                     />
                   </div>
 
@@ -191,7 +191,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">E-mail</p>
-                        <p className="text-gray-600">info@masservices.nl</p>
+                        <p className="text-gray-600">info@mas-services.nl</p>
                       </div>
                     </div>
                     
@@ -201,7 +201,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">Telefoon</p>
-                        <p className="text-gray-600">+31 6 12345678</p>
+                        <p className="text-gray-600">06-36374035</p>
                       </div>
                     </div>
                     
@@ -211,7 +211,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">Locatie</p>
-                        <p className="text-gray-600">Nederland</p>
+                        <p className="text-gray-600">Boxtel</p>
                       </div>
                     </div>
                   </div>

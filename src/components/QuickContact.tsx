@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const QuickContact = () => {
@@ -31,19 +31,6 @@ const QuickContact = () => {
               <MapPin className="h-4 w-4 text-white" />
             </div>
             <span className="text-gray-700">Boxtel</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-rose-400 rounded-lg flex items-center justify-center">
-              <Linkedin className="h-4 w-4 text-white" />
-            </div>
-            <a 
-              href="https://www.linkedin.com/in/gidi-kroonen/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-rose-400 transition-colors"
-            >
-              LinkedIn
-            </a>
           </div>
         </div>
         <Button asChild className="w-full mt-4 bg-rose-400 hover:bg-rose-500">
