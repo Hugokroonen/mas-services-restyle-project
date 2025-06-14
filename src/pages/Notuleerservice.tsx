@@ -16,7 +16,7 @@ const Notuleerservice = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-rose-500">
                 Notuleerservice
               </span>
             </h1>
@@ -47,10 +47,10 @@ const Notuleerservice = () => {
             {/* Online Meetings */}
             <div className="grid lg:grid-cols-2 gap-8">
               <Card className="shadow-xl border-0 overflow-hidden">
-                <CardHeader className="bg-gradient-to-r from-rose-500 to-purple-600 text-white">
+                <CardHeader className="bg-rose-400 text-white">
                   <div className="flex items-center gap-3">
                     <Video className="h-8 w-8" />
-                    <CardTitle className="text-2xl">Online Vergaderen</CardTitle>
+                    <CardTitle className="text-2xl">Online vergaderen</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="p-8">
@@ -74,7 +74,7 @@ const Notuleerservice = () => {
                 <CardContent className="p-8">
                   <div className="flex items-center gap-3 mb-6">
                     <Users className="h-8 w-8 text-rose-500" />
-                    <h3 className="text-2xl font-bold text-gray-900">Flexibele Service</h3>
+                    <h3 className="text-2xl font-bold text-gray-900">Flexibele service</h3>
                   </div>
                   
                   <div className="space-y-4 mb-8">
@@ -96,16 +96,16 @@ const Notuleerservice = () => {
                     </div>
                   </div>
 
-                  <div className="bg-gradient-to-br from-rose-50 to-purple-50 p-6 rounded-lg">
+                  <div className="bg-rose-50 p-6 rounded-lg">
                     <p className="text-gray-700 leading-relaxed mb-4">
                       Wist u dat MAS Services u ook met andere werkzaamheden kan helpen? 
                       Ontdek de mogelijkheden in administratie en secretarieel!
                     </p>
                     <div className="flex gap-2">
-                      <Button variant="outline" size="sm" className="border-purple-200 hover:border-purple-300">
+                      <Button variant="outline" size="sm" className="border-rose-200 hover:border-rose-300">
                         <Link to="/administratie">Administratie</Link>
                       </Button>
-                      <Button variant="outline" size="sm" className="border-purple-200 hover:border-purple-300">
+                      <Button variant="outline" size="sm" className="border-rose-200 hover:border-rose-300">
                         <Link to="/secretarieel">Secretarieel</Link>
                       </Button>
                     </div>
@@ -115,16 +115,16 @@ const Notuleerservice = () => {
             </div>
 
             {/* CTA */}
-            <Card className="shadow-lg border-0 bg-gradient-to-r from-rose-500 to-purple-600 text-white">
+            <Card className="shadow-lg border-0 bg-rose-400 text-white">
               <CardContent className="p-12 text-center">
-                <h3 className="text-3xl font-bold mb-4">Professioneel Notuleren Nodig?</h3>
+                <h3 className="text-3xl font-bold mb-4">Professioneel notuleren nodig?</h3>
                 <p className="text-xl text-rose-100 mb-8 leading-relaxed">
                   Laat uw vergaderingen professioneel notuleren door MAS Services. 
                   Neem contact op voor een vrijblijvende offerte.
                 </p>
-                <Button size="lg" variant="secondary" className="bg-white text-purple-600 hover:bg-gray-50 px-8 py-3">
+                <Button size="lg" variant="secondary" className="bg-white text-rose-400 hover:bg-gray-50 px-8 py-3">
                   <Link to="/contact" className="flex items-center gap-2">
-                    Contact Opnemen
+                    Contact opnemen
                     <ArrowRight className="h-5 w-5" />
                   </Link>
                 </Button>

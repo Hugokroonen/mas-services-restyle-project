@@ -20,7 +20,7 @@ const Secretarieel = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-rose-50">
       <Navigation />
       
       <div className="pt-24 pb-16">
@@ -28,7 +28,7 @@ const Secretarieel = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+              <span className="text-transparent bg-clip-text bg-rose-500">
                 Secretarieel
               </span>
             </h1>
@@ -41,8 +41,8 @@ const Secretarieel = () => {
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <Card className="shadow-xl border-0 overflow-hidden">
-              <CardHeader className="bg-gradient-to-r from-blue-400 to-purple-500 text-white">
-                <CardTitle className="text-2xl">Mijn Secretariële Diensten</CardTitle>
+              <CardHeader className="bg-rose-400 text-white">
+                <CardTitle className="text-2xl">Mijn secretariële diensten</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
                 <div className="space-y-4">
@@ -59,19 +59,19 @@ const Secretarieel = () => {
             <div className="space-y-8">
               <Card className="shadow-lg border-0">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Uitdagende Opdrachten</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Uitdagende opdrachten</h3>
                   <p className="text-gray-600 leading-relaxed mb-6">
                     Heeft u een andere uitdagende opdracht? MAS Services gaat graag voor u aan de slag. 
                     Ontdek ook wat MAS Services kan betekenen voor uw administratie of vergaderingen!
                   </p>
                   <div className="flex gap-4">
-                    <Button className="bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600">
+                    <Button className="bg-rose-400 hover:bg-rose-500">
                       <Link to="/administratie" className="flex items-center gap-2">
                         Administratie
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>
-                    <Button variant="outline" className="border-purple-200 hover:border-purple-300">
+                    <Button variant="outline" className="border-rose-200 hover:border-rose-300">
                       <Link to="/notuleerservice" className="flex items-center gap-2">
                         Vergaderingen
                         <ArrowRight className="h-4 w-4" />
@@ -81,16 +81,16 @@ const Secretarieel = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-lg border-0 bg-gradient-to-br from-blue-50 to-purple-50">
+              <Card className="shadow-lg border-0 bg-rose-50">
                 <CardContent className="p-8 text-center">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Neem Contact Op</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Neem contact op</h3>
                   <p className="text-gray-600 mb-6">
                     Klaar om uw secretariële taken uit handen te geven? 
                     Laten we een gesprek plannen over uw behoeften.
                   </p>
-                  <Button size="lg" className="bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600">
+                  <Button size="lg" className="bg-rose-400 hover:bg-rose-500">
                     <Link to="/contact" className="flex items-center gap-2">
-                      Contact Opnemen
+                      Contact opnemen
                       <ArrowRight className="h-5 w-5" />
                     </Link>
                   </Button>

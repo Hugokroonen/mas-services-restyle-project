@@ -50,40 +50,41 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-white">
-        {/* Hero Image - Full Width */}
-        <div className="relative h-[500px] w-full">
-          <div className="absolute inset-0 bg-rose-100"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center text-gray-500">
-              <div className="text-4xl mb-2">📸</div>
-              <div className="text-sm">Hero afbeelding</div>
-              <div className="text-xs">Placeholder</div>
-            </div>
-          </div>
-          <div className="absolute inset-0 bg-black/10"></div>
+        {/* Hero Image - Header Style */}
+        <div className="relative h-[400px] w-full">
+          <img 
+            src="/lovable-uploads/9ac688cd-d5ac-4222-9e9e-34632fb17888.png" 
+            alt="MAS Services header"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
         {/* Content Overlay */}
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="grid lg:grid-cols-3 gap-12 items-center">
-              <div className="lg:col-span-2 space-y-8">
-                <div className="space-y-6">
-                  <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <div className="lg:col-span-2 space-y-6">
+                <div className="space-y-4">
+                  <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
                     MAS <span className="text-rose-300">Services</span>
                   </h1>
                   
                   {/* Dynamic rotating service text */}
-                  <div className="text-2xl lg:text-3xl font-medium text-white leading-relaxed min-h-[80px] flex items-center">
-                    <span>Professionele </span>
-                    <span className="text-rose-300 transition-all duration-500 mx-2">
-                      {serviceWords[currentService]}
-                    </span>
-                    <span> - focus op uw core business terwijl ik de rest regel.</span>
+                  <div className="text-xl lg:text-2xl font-medium text-white leading-relaxed">
+                    <div className="mb-2">
+                      <span>Professionele </span>
+                      <span className="text-rose-300 transition-all duration-500">
+                        {serviceWords[currentService]}
+                      </span>
+                    </div>
+                    <div className="text-lg lg:text-xl text-rose-100">
+                      Focus op uw core business terwijl ik de rest regel.
+                    </div>
                   </div>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button size="lg" className="bg-rose-400 hover:bg-rose-500 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                     <Link to="/contact" className="flex items-center gap-2">
                       Neem contact op
@@ -108,11 +109,12 @@ const Index = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-rose-50 rounded-3xl p-12 shadow-lg">
-            <div className="w-32 h-32 bg-rose-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-              <div className="text-rose-400 text-center">
-                <div className="text-2xl mb-1">👤</div>
-                <div className="text-xs">Uw foto</div>
-              </div>
+            <div className="w-32 h-32 bg-rose-200 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+              <img 
+                src="/lovable-uploads/a29069a1-ae4b-4a1f-8c38-74ebd396084e.png" 
+                alt="Gidi Kroonen"
+                className="w-full h-full object-cover"
+              />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Gidi Kroonen</h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
