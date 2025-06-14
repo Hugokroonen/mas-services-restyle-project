@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Users, FileText, Calendar } from "lucide-react";
@@ -114,11 +115,11 @@ const Index = () => {
       <section className="py-8 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-rose-50 rounded-3xl p-12 shadow-lg">
-            <div className="w-40 h-40 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+            <div className="w-48 h-48 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
               <img 
                 src="/lovable-uploads/2f02750c-4eaf-469e-b258-84c4a8850b73.png" 
                 alt="Gidi Kroonen - MAS Services"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-[center_10%]"
               />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Gidi Kroonen</h3>
@@ -179,7 +180,7 @@ const Index = () => {
               Neem contact op en ontdek hoe MAS Services u kan helpen met professionele ondersteuning.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" variant="secondary" className="bg-white text-rose-500 hover:bg-gray-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              <Button size="lg" variant="secondary" className="bg-white text-rose-500 hover:bg-gray-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-pulse hover:animate-none">
                 <Link to="/contact" className="flex items-center gap-2">
                   Neem contact op
                   <ArrowRight className="h-5 w-5" />
@@ -196,3 +197,4 @@ const Index = () => {
 };
 
 export default Index;
+

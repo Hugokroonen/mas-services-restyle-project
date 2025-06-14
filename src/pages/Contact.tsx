@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -167,7 +168,7 @@ const Contact = () => {
 
               {/* Why MAS Services */}
               <Card className="shadow-lg border-0 bg-rose-50 h-fit">
-                <CardContent className="p-8">
+                <CardContent className="p-8 pb-12">
                   <h3 className="text-xl font-bold text-gray-900 mb-6">Waarom MAS Services?</h3>
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
@@ -264,3 +265,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
