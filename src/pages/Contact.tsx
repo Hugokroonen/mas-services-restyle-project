@@ -168,25 +168,39 @@ const Contact = () => {
 
               {/* Why MAS Services */}
               <Card className="shadow-lg border-0 bg-rose-50 h-fit">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">Waarom MAS Services?</h3>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-rose-400" />
-                      <span className="text-gray-700 text-sm">Ervaren professional</span>
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-6">Waarom MAS Services?</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-rose-400" />
+                      <span className="text-gray-700">Ervaren professional met ruime kennis</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-rose-400" />
-                      <span className="text-gray-700 text-sm">Flexibele samenwerking</span>
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-rose-400" />
+                      <span className="text-gray-700">Flexibele samenwerking op maat</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-rose-400" />
-                      <span className="text-gray-700 text-sm">Persoonlijke aanpak</span>
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-rose-400" />
+                      <span className="text-gray-700">Persoonlijke aanpak voor elk project</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-rose-400" />
-                      <span className="text-gray-700 text-sm">Snelle responstijd</span>
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-rose-400" />
+                      <span className="text-gray-700">Snelle responstijd en communicatie</span>
                     </div>
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-rose-400" />
+                      <span className="text-gray-700">Betrouwbare en discrete dienstverlening</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-rose-400" />
+                      <span className="text-gray-700">Jarenlange ervaring in de branche</span>
+                    </div>
+                  </div>
+                  <div className="mt-8 p-4 bg-white rounded-lg border border-rose-200">
+                    <p className="text-sm text-gray-600 italic">
+                      "Kwaliteit en betrouwbaarheid staan bij MAS Services voorop. 
+                      Uw project verdient de beste ondersteuning."
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -196,7 +210,7 @@ const Contact = () => {
             <div className="space-y-6">
               <Card className="shadow-lg border-0 overflow-hidden transform hover:scale-105 transition-transform duration-300">
                 <CardContent className="p-0">
-                  <div className="w-full h-96 overflow-hidden">
+                  <div className="w-full h-[500px] overflow-hidden">
                     <img 
                       src="/lovable-uploads/e706c6aa-ddc3-45b2-a8e3-0838040bbd0d.png" 
                       alt="Gidi Kroonen - MAS Services"
