@@ -48,57 +48,67 @@ const Index = () => {
     <div className="min-h-screen bg-slate-50">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white">
-        {/* Hero Image - Header Style */}
-        <div className="relative h-[350px] w-full">
+      {/* Prominent Image Header */}
+      <section className="relative pt-16">
+        <div className="relative h-[400px] w-full overflow-hidden">
           <img 
-            src="/lovable-uploads/a29069a1-ae4b-4a1f-8c38-74ebd396084e.png" 
-            alt="MAS Services header"
-            className="w-full h-full object-cover"
+            src="/lovable-uploads/c35e2eb9-a079-4b03-b1e5-084fe286baba.png" 
+            alt="Professional workspace"
+            className="w-full h-full object-cover object-center"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+          
+          {/* Content overlay */}
+          <div className="absolute inset-0 flex items-center">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+              <div className="max-w-2xl">
+                <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                  MAS <span className="text-rose-300">Services</span>
+                </h1>
+                <p className="text-xl lg:text-2xl text-white/90 leading-relaxed">
+                  Professionele ondersteuning voor uw bedrijf
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        {/* Content Overlay */}
-        <div className="absolute inset-0 flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="grid lg:grid-cols-3 gap-12 items-center">
-              <div className="lg:col-span-2 space-y-6">
+      {/* Hero Content Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-3 gap-12 items-center">
+            <div className="lg:col-span-2 space-y-8">
+              <div className="space-y-6">
+                {/* Dynamic rotating service text */}
                 <div className="space-y-4">
-                  <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
-                    MAS <span className="text-rose-200">Services</span>
-                  </h1>
-                  
-                  {/* Dynamic rotating service text */}
-                  <div className="space-y-2">
-                    <div className="text-xl lg:text-2xl font-medium text-white leading-relaxed">
-                      <span>Professionele </span>
-                      <span className="text-rose-200 transition-all duration-500">
-                        {serviceWords[currentService]}
-                      </span>
-                    </div>
-                    <div className="text-lg lg:text-xl text-white font-normal">
-                      Focus op uw core business terwijl ik de rest regel.
-                    </div>
+                  <div className="text-2xl lg:text-3xl font-medium text-gray-900 leading-relaxed">
+                    <span>Professionele </span>
+                    <span className="text-rose-500 transition-all duration-500 font-semibold">
+                      {serviceWords[currentService]}
+                    </span>
                   </div>
-                </div>
-                
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button size="lg" className="bg-rose-300 hover:bg-rose-400 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                    <Link to="/contact" className="flex items-center gap-2">
-                      Neem contact op
-                      <ArrowRight className="h-5 w-5" />
-                    </Link>
-                  </Button>
-                  <Button variant="outline" size="lg" className="border-2 border-white text-rose-300 hover:bg-white hover:text-rose-400 px-8 py-3 rounded-full transition-all duration-300 hover:shadow-md">
-                    Bekijk diensten
-                  </Button>
+                  <div className="text-xl lg:text-2xl text-gray-700 font-normal leading-relaxed">
+                    Focus op uw core business terwijl ik de rest regel.
+                  </div>
                 </div>
               </div>
               
-              <div className="space-y-6">
-                <QuickContact />
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Button size="lg" className="bg-rose-400 hover:bg-rose-500 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                  <Link to="/contact" className="flex items-center gap-2">
+                    Neem contact op
+                    <ArrowRight className="h-5 w-5" />
+                  </Link>
+                </Button>
+                <Button variant="outline" size="lg" className="border-2 border-rose-400 text-rose-500 hover:bg-rose-50 px-8 py-3 rounded-full transition-all duration-300 hover:shadow-md">
+                  Bekijk diensten
+                </Button>
               </div>
+            </div>
+            
+            <div className="space-y-6">
+              <QuickContact />
             </div>
           </div>
         </div>
@@ -139,7 +149,7 @@ const Index = () => {
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-3 hover:scale-105 bg-white">
                 <CardHeader className="text-center pb-4">
-                  <div className="mx-auto w-16 h-16 bg-rose-300 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:rotate-6">
+                  <div className="mx-auto w-16 h-16 bg-rose-400 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 group-hover:rotate-6">
                     <service.icon className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-xl font-bold text-gray-900">{service.title}</CardTitle>
@@ -148,7 +158,7 @@ const Index = () => {
                   <CardDescription className="text-gray-600 leading-relaxed">
                     {service.description}
                   </CardDescription>
-                  <Button variant="ghost" className="text-rose-300 hover:text-rose-400 font-medium group">
+                  <Button variant="ghost" className="text-rose-500 hover:text-rose-600 font-medium group">
                     <Link to={service.link} className="flex items-center gap-2">
                       Meer informatie
                       <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -162,7 +172,7 @@ const Index = () => {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-20 bg-rose-300 relative overflow-hidden">
+      <section className="py-20 bg-rose-400 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.1%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
@@ -173,7 +183,7 @@ const Index = () => {
               Neem contact op en ontdek hoe MAS Services u kan helpen met professionele ondersteuning.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" variant="secondary" className="bg-white text-rose-300 hover:bg-gray-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              <Button size="lg" variant="secondary" className="bg-white text-rose-500 hover:bg-gray-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                 <Link to="/contact" className="flex items-center gap-2">
                   Neem contact op
                   <ArrowRight className="h-5 w-5" />

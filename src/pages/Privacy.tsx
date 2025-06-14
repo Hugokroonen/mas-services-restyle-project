@@ -14,7 +14,7 @@ const Privacy = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-rose-50">
+    <div className="min-h-screen bg-slate-50">
       <Navigation />
       
       <div className="pt-24 pb-16">
@@ -22,7 +22,7 @@ const Privacy = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              <span className="text-transparent bg-clip-text bg-rose-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-rose-500">
                 Privacy
               </span>
             </h1>
@@ -47,14 +47,14 @@ const Privacy = () => {
             </Card>
 
             <Card className="shadow-xl border-0 overflow-hidden">
-              <CardHeader className="bg-rose-300 text-white">
+              <CardHeader className="bg-rose-400 text-white">
                 <CardTitle className="text-2xl">Onze privacyprincipes</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
                 <div className="space-y-4">
                   {privacyPoints.map((point, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <div className="w-6 h-6 bg-rose-300 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-6 h-6 bg-rose-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-white text-sm font-bold">{index + 1}</span>
                       </div>
                       <p className="text-gray-700 leading-relaxed">{point}</p>
