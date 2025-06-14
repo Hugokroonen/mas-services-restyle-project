@@ -20,7 +20,7 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">
+          <Link to="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
             MAS Services
           </Link>
 
@@ -30,7 +30,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className="text-gray-700 hover:text-rose-600 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </Link>
@@ -58,7 +58,7 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="block px-3 py-2 text-gray-700 hover:text-rose-600 transition-colors duration-200 font-medium"
+                  className="block px-3 py-2 text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

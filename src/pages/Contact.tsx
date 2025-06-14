@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
@@ -19,14 +19,21 @@ const Contact = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
+    setIsSubmitting(true);
+    
+    // Simulate form submission
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
     toast({
       title: "Bericht verzonden!",
-      description: "Bedankt voor uw bericht. We nemen zo spoedig mogelijk contact met u op.",
+      description: "Bedankt voor uw bericht. Ik neem zo spoedig mogelijk contact met u op.",
     });
     setFormData({ name: "", email: "", subject: "", message: "" });
+    setIsSubmitting(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -37,7 +44,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-rose-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <Navigation />
       
       <div className="pt-24 pb-16">
@@ -45,7 +52,7 @@ const Contact = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
                 Contact
               </span>
             </h1>
@@ -57,14 +64,17 @@ const Contact = () => {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <Card className="shadow-xl border-0">
-              <CardHeader className="bg-gradient-to-r from-rose-500 to-purple-600 text-white">
-                <CardTitle className="text-2xl">Neem Contact Op</CardTitle>
+            <Card className="shadow-xl border-0 transform hover:scale-105 transition-transform duration-300">
+              <CardHeader className="bg-gradient-to-r from-blue-400 to-purple-500 text-white rounded-t-lg">
+                <CardTitle className="text-2xl flex items-center gap-2">
+                  <Send className="h-6 w-6" />
+                  Neem Contact Op
+                </CardTitle>
               </CardHeader>
               <CardContent className="p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <Label htmlFor="name" className="text-gray-700 font-medium">
+                  <div className="space-y-2">
+                    <Label htmlFor="name" className="text-gray-700 font-medium flex items-center gap-2">
                       Uw naam (vereist)
                     </Label>
                     <Input
@@ -74,11 +84,12 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="mt-2 border-gray-300 focus:border-rose-500 focus:ring-rose-500"
+                      className="transition-all duration-200 border-gray-300 focus:border-blue-400 focus:ring-blue-400 hover:border-gray-400"
+                      placeholder="Voer uw naam in..."
                     />
                   </div>
 
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="email" className="text-gray-700 font-medium">
                       Uw e-mail adres (vereist)
                     </Label>
@@ -89,11 +100,12 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="mt-2 border-gray-300 focus:border-rose-500 focus:ring-rose-500"
+                      className="transition-all duration-200 border-gray-300 focus:border-blue-400 focus:ring-blue-400 hover:border-gray-400"
+                      placeholder="voorbeeld@email.nl"
                     />
                   </div>
 
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="subject" className="text-gray-700 font-medium">
                       Onderwerp
                     </Label>
@@ -103,11 +115,12 @@ const Contact = () => {
                       type="text"
                       value={formData.subject}
                       onChange={handleChange}
-                      className="mt-2 border-gray-300 focus:border-rose-500 focus:ring-rose-500"
+                      className="transition-all duration-200 border-gray-300 focus:border-blue-400 focus:ring-blue-400 hover:border-gray-400"
+                      placeholder="Waar kan ik u mee helpen?"
                     />
                   </div>
 
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="message" className="text-gray-700 font-medium">
                       Uw bericht
                     </Label>
@@ -117,16 +130,28 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows={6}
-                      className="mt-2 border-gray-300 focus:border-rose-500 focus:ring-rose-500"
+                      className="transition-all duration-200 border-gray-300 focus:border-blue-400 focus:ring-blue-400 hover:border-gray-400 resize-none"
+                      placeholder="Beschrijf uw vraag of wens..."
                     />
                   </div>
 
                   <Button 
                     type="submit" 
                     size="lg" 
-                    className="w-full bg-gradient-to-r from-rose-500 to-purple-600 hover:from-rose-600 hover:to-purple-700"
+                    disabled={isSubmitting}
+                    className="w-full bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600 transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:transform-none"
                   >
-                    Verzenden
+                    {isSubmitting ? (
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                        Verzenden...
+                      </div>
+                    ) : (
+                      <div className="flex items-center gap-2">
+                        <Send className="h-4 w-4" />
+                        Verzenden
+                      </div>
+                    )}
                   </Button>
                 </form>
               </CardContent>
@@ -134,40 +159,40 @@ const Contact = () => {
 
             {/* Contact Info & Photo */}
             <div className="space-y-8">
-              <Card className="shadow-lg border-0">
+              <Card className="shadow-lg border-0 transform hover:scale-105 transition-transform duration-300">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-6">Contactgegevens</h3>
                   
                   <div className="space-y-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-rose-500 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="flex items-start gap-4 group">
+                      <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-200">
                         <Mail className="h-6 w-6 text-white" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-900">E-mail</h4>
-                        <p className="text-gray-600">info@mas-services.nl</p>
+                        <p className="text-gray-600 hover:text-blue-500 transition-colors cursor-pointer">info@mas-services.nl</p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-rose-500 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="flex items-start gap-4 group">
+                      <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-200">
                         <Phone className="h-6 w-6 text-white" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-900">Telefoon</h4>
-                        <p className="text-gray-600">06-36374035</p>
+                        <p className="text-gray-600 hover:text-blue-500 transition-colors cursor-pointer">06-36374035</p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-rose-500 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="flex items-start gap-4 group">
+                      <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-200">
                         <MapPin className="h-6 w-6 text-white" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-900">Adres</h4>
                         <p className="text-gray-600">
-                          Oude Dijk 84<br />
-                          5298 BE Liempde
+                          Weikespad 5<br />
+                          5283 NA Boxtel
                         </p>
                       </div>
                     </div>
@@ -175,18 +200,18 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-lg border-0 overflow-hidden">
+              <Card className="shadow-lg border-0 overflow-hidden transform hover:scale-105 transition-transform duration-300">
                 <CardContent className="p-0">
                   <img 
                     src="/lovable-uploads/a29069a1-ae4b-4a1f-8c38-74ebd396084e.png" 
                     alt="MAS Services contact persoon" 
                     className="w-full h-64 object-cover object-center"
                   />
-                  <div className="p-6 bg-gradient-to-br from-rose-50 to-purple-50">
+                  <div className="p-6 bg-gradient-to-br from-blue-50 to-purple-50">
                     <h4 className="font-bold text-gray-900 text-lg mb-2">MAS Services</h4>
                     <p className="text-gray-600">
-                      Professionele secretariële diensten in Liempde en omgeving. 
-                      Persoonlijke service en kwaliteit staan bij ons voorop.
+                      Professionele secretariële diensten in Boxtel en omgeving. 
+                      Persoonlijke service en kwaliteit staan bij mij voorop.
                     </p>
                   </div>
                 </CardContent>

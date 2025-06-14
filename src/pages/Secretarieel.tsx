@@ -20,7 +20,7 @@ const Secretarieel = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-rose-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <Navigation />
       
       <div className="pt-24 pb-16">
@@ -28,7 +28,7 @@ const Secretarieel = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
                 Secretarieel
               </span>
             </h1>
@@ -41,8 +41,8 @@ const Secretarieel = () => {
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <Card className="shadow-xl border-0 overflow-hidden">
-              <CardHeader className="bg-gradient-to-r from-rose-500 to-purple-600 text-white">
-                <CardTitle className="text-2xl">Onze Secretariële Diensten</CardTitle>
+              <CardHeader className="bg-gradient-to-r from-blue-400 to-purple-500 text-white">
+                <CardTitle className="text-2xl">Mijn Secretariële Diensten</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
                 <div className="space-y-4">
@@ -65,7 +65,7 @@ const Secretarieel = () => {
                     Ontdek ook wat MAS Services kan betekenen voor uw administratie of vergaderingen!
                   </p>
                   <div className="flex gap-4">
-                    <Button className="bg-gradient-to-r from-rose-500 to-purple-600 hover:from-rose-600 hover:to-purple-700">
+                    <Button className="bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600">
                       <Link to="/administratie" className="flex items-center gap-2">
                         Administratie
                         <ArrowRight className="h-4 w-4" />
@@ -81,14 +81,14 @@ const Secretarieel = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-lg border-0 bg-gradient-to-br from-rose-50 to-purple-50">
+              <Card className="shadow-lg border-0 bg-gradient-to-br from-blue-50 to-purple-50">
                 <CardContent className="p-8 text-center">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Neem Contact Op</h3>
                   <p className="text-gray-600 mb-6">
                     Klaar om uw secretariële taken uit handen te geven? 
                     Laten we een gesprek plannen over uw behoeften.
                   </p>
-                  <Button size="lg" className="bg-gradient-to-r from-rose-500 to-purple-600 hover:from-rose-600 hover:to-purple-700">
+                  <Button size="lg" className="bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600">
                     <Link to="/contact" className="flex items-center gap-2">
                       Contact Opnemen
                       <ArrowRight className="h-5 w-5" />
