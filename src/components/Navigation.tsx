@@ -21,7 +21,7 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-2xl font-bold text-blue-600">
+          <Link to="/" className="text-2xl font-bold text-rose-400">
             MAS Services
           </Link>
 
@@ -31,7 +31,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-rose-400 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </Link>
@@ -61,7 +61,7 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="block px-3 py-2 text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium"
+                  className="block px-3 py-2 text-gray-700 hover:text-rose-400 transition-colors duration-200 font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
