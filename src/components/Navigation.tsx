@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import SearchCommand from "./SearchCommand";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +21,12 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+          <Link to="/" className="text-2xl font-bold text-blue-600">
             MAS Services
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -35,10 +36,20 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <a
+              href="https://www.linkedin.com/in/gidi-kroonen/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium"
+            >
+              LinkedIn
+            </a>
+            <SearchCommand />
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <SearchCommand />
             <Button
               variant="ghost"
               size="sm"
@@ -64,6 +75,15 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              <a
+                href="https://www.linkedin.com/in/gidi-kroonen/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-3 py-2 text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         )}

@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+            <h3 className="text-2xl font-bold text-blue-400">
               MAS Services
             </h3>
             <p className="text-gray-300 leading-relaxed">
@@ -37,6 +37,20 @@ const Footer = () => {
               <Link to="/notuleerservice" className="block hover:text-blue-400 transition-colors">
                 Notuleerservice
               </Link>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold">Volg Mij</h4>
+            <div className="text-gray-300 space-y-2">
+              <a 
+                href="https://www.linkedin.com/in/gidi-kroonen/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block hover:text-blue-400 transition-colors"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>
