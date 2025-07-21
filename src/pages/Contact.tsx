@@ -66,8 +66,9 @@ const Contact = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Heeft u vragen over de diensten of wilt u een vrijblijvende offerte? 
-              Ik help u graag verder. Neem gerust contact op!
+              Heeft u vragen over de diensten of wilt u een vrijblijvende offerte?
+              <br />
+              Neem gerust contact op!
             </p>
           </div>
 
@@ -194,7 +195,7 @@ const Contact = () => {
                     </div>
                     <div className="flex items-center gap-3">
                       <CheckCircle className="h-5 w-5 text-rose-400" />
-                      <span className="text-gray-700">Jarenlange ervaring in de branche</span>
+                      <span className="text-gray-700">Jarenlange ervaring in het vakgebied</span>
                     </div>
                   </div>
                 </CardContent>
@@ -266,4 +267,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

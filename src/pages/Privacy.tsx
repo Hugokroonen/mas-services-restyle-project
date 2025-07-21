@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -9,8 +8,8 @@ const Privacy = () => {
     "Allereerst vraagt om uitdrukkelijke toestemming om persoonsgegevens te mogen verwerken in gevallen waarin dit vereist is;",
     "Het verzamelen van persoonsgegevens beperkt tot de persoonsgegevens die uitsluitend nodig zijn voor de doeleinden waarvoor ze worden verwerkt;",
     "Gegevens niet doorgeeft aan derde partijen, tenzij dat nodig is om de gevraagde dienst te kunnen leveren of wanneer MAS Services daar wettelijk toe verplicht is;",
-    "Wanneer gegevens gedeeld worden afspraken maakt met derde partijen om er o.a. voor te zorgen dat gegevens niet voor andere doeleinden worden gebruikt;",
-    "Passende beveiligingsmaatregelen neemt om persoonsgegevens te beschermen en dat ook eisen van partijen die in opdracht van MAS Services persoonsgegevens verwerken;"
+    "Als gegevens gedeeld worden met andere partijen, er duidelijke afspraken met hen gemaakt worden zodat de gegevens niet voor andere doelen worden gebruikt;",
+    "Persoonsgegevens goed beveiligt en ook andere partijen waarmee wordt samengewerkt verplicht om datzelfde te doen;"
   ];
 
   return (

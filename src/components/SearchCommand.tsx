@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -28,13 +27,37 @@ const SearchCommand = () => {
     return () => document.removeEventListener("keydown", down);
   }, []);
 
-  const searchItems = [
-    { title: "Home", href: "/", description: "Terug naar de hoofdpagina" },
-    { title: "Secretarieel", href: "/secretarieel", description: "Secretariële diensten en ondersteuning" },
-    { title: "Administratie", href: "/administratie", description: "Administratieve ondersteuning en boekhouding" },
-    { title: "Notuleerservice", href: "/notuleerservice", description: "Professioneel notuleren van vergaderingen" },
-    { title: "Contact", href: "/contact", description: "Neem contact op met MAS Services" },
-    { title: "Privacy", href: "/privacy", description: "Privacybeleid en voorwaarden" },
+  const searchIndex = [
+    { 
+      title: "Home", 
+      href: "/", 
+      content: "MAS Services notuleerservice administratieve diensten secretariële diensten Professionele ondersteuning management assistentie boekhouding facturering projectadministratie vergaderingen Gidi Kroonen" 
+    },
+    { 
+      title: "Secretarieel", 
+      href: "/secretarieel", 
+      content: "Tijdelijke vervanging secretaresse administratief medewerker Secretariaat bestuur stichting vereniging Afhandeling inkomende post e-mails Redigeren teksten tekstverwerking Schrijven zakelijke correspondentie organiseren van vergaderingen, bijeenkomsten en evenementen PowerPoint presentaties maken Verzorgen attenties medewerkers relaties kerstpakketten Optreden als gastvrouw" 
+    },
+    { 
+      title: "Administratie", 
+      href: "/administratie", 
+      content: "Sorteren, coderen en inboeken van facturen/bonnetjes Geautomatiseerd verwerken van facturen/bonnetjes (AFAS, Twinfield, Exact, Basecone, WeFact) Data-entry Verzorgen van betalingen Verzorgen van facturering Debiteurenbewaking Personeelsadministratie Ledenadministratie voor vereniging, stichting of coöperatie" 
+    },
+    { 
+      title: "Notuleerservice", 
+      href: "/notuleerservice", 
+      content: "notuleren vergaderingen verslag actielijst taalgebruik spelling grammatica Online vergaderen COVID-19 WhatsApp Zoom Microsoft Teams" 
+    },
+    { 
+      title: "Contact", 
+      href: "/contact", 
+      content: "offerte vragen bericht sturen Naam E-mail Telefoon Onderwerp Bericht Waarom MAS Services? Ervaren professional Flexibele samenwerking Persoonlijke aanpak Snelle responstijd Betrouwbare dienstverlening Jarenlange ervaring in het vakgebied" 
+    },
+    { 
+      title: "Privacy", 
+      href: "/privacy", 
+      content: "privacyverklaring persoonsgegevens verwerken toestemming AVG compliance Algemene Verordening Gegevensbescherming" 
+    },
   ];
 
   const handleSelect = (href: string) => {
@@ -61,15 +84,16 @@ const SearchCommand = () => {
         <CommandList>
           <CommandEmpty>Geen resultaten gevonden.</CommandEmpty>
           <CommandGroup heading="Pagina's">
-            {searchItems.map((item) => (
+            {searchIndex.map((item) => (
               <CommandItem
                 key={item.href}
                 onSelect={() => handleSelect(item.href)}
+                value={`${item.title} ${item.content}`}
                 className="cursor-pointer"
               >
                 <div className="flex flex-col">
                   <span>{item.title}</span>
-                  <span className="text-sm text-muted-foreground">{item.description}</span>
+                  <span className="text-sm text-muted-foreground">Ga naar {item.title}</span>
                 </div>
               </CommandItem>
             ))}
