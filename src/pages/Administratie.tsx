@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 const Administratie = () => {
   const services = [
     "Sorteren, coderen en inboeken van facturen/bonnetjes",
-    "Geautomatiseerd verwerken van facturen/bonnetjes (AFAS, Twinfield, Exact)",
+    "Geautomatiseerd verwerken van facturen/bonnetjes (AFAS, Twinfield, Exact, Basecone, WeFact)",
     "Data-entry",
     "Verzorgen van betalingen",
     "Verzorgen van facturering",

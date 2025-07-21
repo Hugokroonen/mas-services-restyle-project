@@ -13,8 +13,8 @@ const Secretarieel = () => {
     "Afhandeling van inkomende post/e-mails",
     "Redigeren van teksten en tekstverwerking",
     "Schrijven van zakelijke correspondentie",
-    "Organiseren van vergaderingen/bijeenkomsten/evenementen",
-    "PowerPoint presentaties maken en het bijhouden van uw website",
+    "organiseren van vergaderingen, bijeenkomsten en evenementen",
+    "PowerPoint presentaties maken",
     "Verzorgen attenties voor medewerkers of relaties (bijv. kerstpakketten)",
     "Optreden als gastvrouw"
   ];

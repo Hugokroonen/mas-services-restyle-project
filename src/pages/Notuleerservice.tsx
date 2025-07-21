@@ -39,7 +39,7 @@ const Notuleerservice = () => {
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Het verslag kan in de door u gewenste vorm worden aangeleverd, van actielijst tot uitvoerig 
-                  verslag. Uiteraard wordt daarbij goed gecontroleerd op taalgebruik, spelling en grammatica.
+                  verslag. Uiteraard wordt daarbij goed gelet op taalgebruik, spelling en grammatica.
                 </p>
               </CardContent>
             </Card>

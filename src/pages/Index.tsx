@@ -34,7 +34,7 @@ const Index = () => {
     {
       icon: FileText,
       title: "Administratie",
-      description: "Volledige administratieve ondersteuning voor uw boekhouding, facturering en financiële administratie.",
+      description: "Volledige administratieve ondersteuning voor uw boekhouding, facturering en projectadministratie.",
       link: "/administratie"
     },
     {
@@ -138,8 +138,7 @@ const Index = () => {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl font-bold text-gray-900">Mijn diensten</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              MAS Services biedt u professionele secretariële diensten, administratieve ondersteuning 
-              en notuleerservice. Focus op uw core business terwijl de rest geregeld wordt.
+              MAS Services biedt u professionele secretariële diensten, administratieve ondersteuning en notuleerservice in Boxtel
             </p>
           </div>
           
@@ -198,4 +197,3 @@ const Index = () => {
 };
 
 export default Index;
-
