@@ -34,7 +34,7 @@ const Index = () => {
     {
       icon: FileText,
       title: "Administratie",
-      description: "Volledige administratieve ondersteuning voor uw boekhouding, facturering en financiële administratie.",
+      description: "Volledige administratieve ondersteuning voor uw boekhouding, facturering en projectadministratie.",
       link: "/administratie"
     },
     {
@@ -138,8 +138,7 @@ const Index = () => {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl font-bold text-gray-900">Mijn diensten</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              MAS Services biedt u professionele secretariële diensten, administratieve ondersteuning 
-              en notuleerservice. Focus op uw core business terwijl de rest geregeld wordt.
+              MAS Services biedt u professionele secretariële diensten, administratieve ondersteuning en notuleerservice in Boxtel
             </p>
           </div>
           
@@ -181,7 +180,7 @@ const Index = () => {
               Neem contact op en ontdek hoe MAS Services u kan helpen met professionele ondersteuning.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" variant="secondary" className="bg-white text-rose-500 hover:bg-gray-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-[pulse_3s_ease-in-out_infinite] hover:animate-none">
+              <Button size="lg" variant="secondary" className="bg-white text-rose-500 hover:bg-gray-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-subtle-pulse hover:animate-none">
                 <Link to="/contact" className="flex items-center gap-2">
                   Neem contact op
                   <ArrowRight className="h-5 w-5" />
@@ -198,4 +197,3 @@ const Index = () => {
 };
 
 export default Index;
-
