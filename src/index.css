@@ -4,6 +4,14 @@
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
 
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-mt-20 {
+  scroll-margin-top: 80px;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

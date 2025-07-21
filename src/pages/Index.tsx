@@ -22,15 +22,6 @@ const Index = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleScrollToServices = () => {
-    const servicesSection = document.getElementById("diensten");
-    if (servicesSection) {
-      const yOffset = -80; // Adjust this value to account for the sticky header
-      const y = servicesSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-  };
-
   const services = [
     {
       icon: Users,
@@ -106,9 +97,11 @@ const Index = () => {
                     <ArrowRight className="h-5 w-5" />
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" className="border-2 border-rose-400 text-rose-500 hover:bg-rose-50 px-8 py-3 rounded-full transition-all duration-300 hover:shadow-md" onClick={handleScrollToServices}>
-                  Bekijk diensten
-                </Button>
+                <a href="#diensten">
+                  <Button variant="outline" size="lg" className="border-2 border-rose-400 text-rose-500 hover:bg-rose-50 px-8 py-3 rounded-full transition-all duration-300 hover:shadow-md">
+                    Bekijk diensten
+                  </Button>
+                </a>
               </div>
             </div>
             
@@ -140,7 +133,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="diensten" className="py-8 bg-slate-50">
+      <section id="diensten" className="py-8 bg-slate-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl font-bold text-gray-900">Mijn diensten</h2>
