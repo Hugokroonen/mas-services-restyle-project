@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Users, FileText, Calendar } from "lucide-react";
@@ -23,6 +21,15 @@ const Index = () => {
     }, 2500);
     return () => clearInterval(interval);
   }, []);
+
+  const handleScrollToServices = () => {
+    const servicesSection = document.getElementById("diensten");
+    if (servicesSection) {
+      const yOffset = -80; // Adjust this value to account for the sticky header
+      const y = servicesSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
 
   const services = [
     {
@@ -99,7 +106,7 @@ const Index = () => {
                     <ArrowRight className="h-5 w-5" />
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" className="border-2 border-rose-400 text-rose-500 hover:bg-rose-50 px-8 py-3 rounded-full transition-all duration-300 hover:shadow-md">
+                <Button variant="outline" size="lg" className="border-2 border-rose-400 text-rose-500 hover:bg-rose-50 px-8 py-3 rounded-full transition-all duration-300 hover:shadow-md" onClick={handleScrollToServices}>
                   Bekijk diensten
                 </Button>
               </div>
@@ -133,7 +140,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-8 bg-slate-50">
+      <section id="diensten" className="py-8 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl font-bold text-gray-900">Mijn diensten</h2>
