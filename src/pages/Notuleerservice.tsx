@@ -117,7 +117,7 @@ const Notuleerservice = () => {
             {/* CTA */}
             <Card className="shadow-lg border-0 bg-rose-400 text-white">
               <CardContent className="p-12 text-center">
-                <h3 className="text-3xl font-bold mb-4">Professioneel notuleren nodig?</h3>
+                <h3 className="text-3xl font-bold mb-4">Een professionele notulist nodig?</h3>
                 <p className="text-xl text-rose-100 mb-8 leading-relaxed">
                   Laat uw vergaderingen professioneel notuleren door MAS Services. 
                   Neem contact op voor een vrijblijvende offerte.
